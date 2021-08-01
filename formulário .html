@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="formulário .css" media="">
+    <link rel="stylesheet" href="formulário .css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
      </style>
@@ -16,11 +16,11 @@
         <br>
         <form>
             <fieldset class="grupo">
-                <div>
+                <div class="campo">
                     <label for="Nome"><strong>Nome</strong></label>
                     <input type="text" name="nome" id="nome" required>
                 </div>
-                <div>
+                <div class="campo">
                     <label for="Sobrenome"><strong>Sobrenome</strong></label>
                     <input type="text" name="sobrenome" id="sobrenome" required>
                 </div>
@@ -32,6 +32,7 @@
 
             <div class="campo">
                 <label><strong>qual lado da aplicação você desenvolve?</strong></label>
+                
                 <label>
                     <input type="radio" name="devweb" value="front-end" checked> Front-end
                 </label>
@@ -47,15 +48,17 @@
                 <label for="Senioridade"> <strong>Senioridade</strong></label>
                 <select id="Senioridade">
                     <option selected disabled value="">Selecione</option>
-                    <option>Junior</option>
+                    <option>Júnior</option>
                     <option >Pleno</option>
                     <option>Senior</option>
                 </select>
             </div>
             <fieldset class="grupo">
-                <div class="campo">
-                    <label><strong>As tecnologia que utiliza </strong></label>
-                    <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                <div id="checkbox">
+                    <label><strong>As tecnologia que utiliza:</strong></label>
+                    <br>
+                    
+                    <br><input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
                     <label for="tecnolia1">HTML</label>
                     <input type="checkbox" id="tecnologia2" name="tecnologia2" value="HTML">
                     <label for="tecnolia2">CSS</label>
@@ -74,8 +77,8 @@
             </fieldset>
             <div class="campo">
                 <br>
-                <label><strong>um pouco da sua experiência:</strong></label>
-                <textarea row="6" style=" width:25em" id="experiencia" name="experiencia"></textarea>
+                <label><strong> Diga um pouco da sua experiência:</strong></label>
+                <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
             </div>
             <button type="submit" class="botao">concluido</button>
         </form>
